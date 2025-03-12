@@ -3,37 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Importing Bootstrap</title>
-    <link href="./css/bootstrap.min.css" rel="stylesheet"> <!-- css-->
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+
 </head>
+
 <body>
     <h1 class="text-primary">Hello World</h1>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Save My self
     </button>
-    
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">About Myself</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title" id="exampleModalLabel">About Myself</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                   <img src="images.jfif" width="200 "height="200">
-                    Im not a robot!
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                <button type="button" class="btn btn-primary">Next</button>
-                </div>
-            </div>
+
+                    <div class="container-fluid border-dark b-5">
+
+                        <div class="row">
+
+                            <div class="col-4 d-flex justify-content-center align-items-center-bg-dark">
+
+                                <img class="img-fluid" src="c:\Users\COMLAB\Desktop\images.jfif" style="height:200px;"/>
+                            </div>
+
+                            <div class="col-8">
+                                    <!--right1st row-->
+                            <div class="row bg-secondary text-light p-5">
+                                <div class="col-4">Meneses Evan</div>
+                                <div class="col-8">Fb Ig Yt Web LinkedIn</div>
+                            </div>
+
+                            <div class="row bg-dark text-light">
+                                <div class="col">Rap Artist</div>
+                            </div>
+
+                            <div class="row text-light">
+                                <div class="col-3 bg-primary p-5">Html</div>
+                                <div class="col-3 bg-success p-5">Css</div>
+                                <div class="col-3 bg-warning p-5">PHP</div>
+                                <div class="col-3 bg-danger p-5"> MYSQL</div>
+                            </div>
+                            
             </div>
         </div>
-        
-        <script src="js/bootstrap.bundle.min.js"> </script> 
-    </body>
+    </div>
 
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
